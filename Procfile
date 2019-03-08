@@ -1,1 +1,1 @@
-web : gunicorn empathy.wsgi
+web: gunicorn empathy.wsgi
