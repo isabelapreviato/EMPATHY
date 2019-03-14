@@ -11,6 +11,6 @@
                          "footer footer footer footer"
 }
 
-button {
-    
+.button:hover {
+    cursor: pointer;
 }
