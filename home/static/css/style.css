@@ -11,6 +11,11 @@
                          "footer footer footer footer"
 }
 
+button {
+    border: none;
+    text-decoration: none;
+}
+
 .button:hover {
     cursor: pointer;
 }
