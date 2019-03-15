@@ -14,11 +14,11 @@ a{
     display: grid;
     grid-template-areas: "nav nav nav nav"
                          "header header header header"
-                         "aside aside article article"
-                         "aside aside article article"
+                         "aside aside aside aside"
+                         "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 70px 450px 200px 200px 600px 50px;
+    grid-template-rows: 80px 834px 400px 200px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -34,6 +34,7 @@ nav{
     -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    border-bottom: 1px solid lightgray;
 }
 nav a{
     text-transform: uppercase;
@@ -59,9 +60,13 @@ nav a{
 
 header{
     grid-area: header;
-    /* background-image: url(https://www.amnesty.org.au/wp-content/uploads/2016/07/217083_A_young_refugee_on_the_island_of_Kos-e1474273473362-1489x900.jpg) */
-    /* Fonte da imagem: https://www.amnesty.org.au/campaigns/refugees/ */
+    width: 100%;
 }
+
+header img:hover{
+    opacity: 0.5;
+}
+
 
 /* <!-- ==================================
             Section - Botões
@@ -111,10 +116,20 @@ article h3{
 
 aside{
     grid-area: aside;
-    background-color:orange;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-aside > p{
-    font-size: 50pt;
+aside p{
+    font-size: 13pt;
+}
+aside h2 {
+    display: flex;
 }
 
 
