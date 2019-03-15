@@ -2,12 +2,12 @@
 body{
     width: 100vw;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: smoke;
 }
 #grid{
     display: grid;
@@ -22,7 +22,8 @@ a{
 }
 header{
     grid-area: header;
-    background-color: blue;
+    background-image: url(https://www.amnesty.org.au/wp-content/uploads/2016/07/217083_A_young_refugee_on_the_island_of_Kos-e1474273473362-1489x900.jpg)
+    /* Fonte da imagem: https://www.amnesty.org.au/campaigns/refugees/ */
 }
 nav{
     grid-area: nav;
