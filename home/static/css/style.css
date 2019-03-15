@@ -7,8 +7,9 @@ body{
 }
 a{
     text-decoration: none;
-    color: smoke;
+    color: #212121;
 }
+
 #grid{
     display: grid;
     grid-template-areas: "nav nav nav nav"
@@ -17,25 +18,55 @@ a{
                          "aside aside article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 50px 450px 200px 200px 600px 50px;
+    grid-template-rows: 70px 450px 200px 200px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
-header{
-    grid-area: header;
-    background-image: url(https://www.amnesty.org.au/wp-content/uploads/2016/07/217083_A_young_refugee_on_the_island_of_Kos-e1474273473362-1489x900.jpg)
-    /* Fonte da imagem: https://www.amnesty.org.au/campaigns/refugees/ */
-}
+
+/* <!-- ==================================
+            Navbar
+================================== --> */
 nav{
     grid-area: nav;
-    background-color: orange;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
 }
 nav a{
-    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
+    text-transform: uppercase;
     font-weight: bold;
 }
+
+#pages{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+ }
+ #pages img{
+    width: 60px;
+ }
+ 
+
+/* <!-- ==================================
+            Header
+================================== --> */
+
+header{
+    grid-area: header;
+    /* background-image: url(https://www.amnesty.org.au/wp-content/uploads/2016/07/217083_A_young_refugee_on_the_island_of_Kos-e1474273473362-1489x900.jpg) */
+    /* Fonte da imagem: https://www.amnesty.org.au/campaigns/refugees/ */
+}
+
+/* <!-- ==================================
+            Section - Botões
+================================== --> */
+
 article{
     grid-area: article;
     background-color: orange;
@@ -53,6 +84,7 @@ article h3{
     text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
     font-size: 30pt;
 }
+
 .user{
     width: 50%;
     height: 100%;
@@ -72,6 +104,11 @@ article h3{
     outline-style: none;
     cursor: pointer;
 }
+
+/* <!-- ==================================
+            Aside
+================================== --> */
+
 aside{
     grid-area: aside;
     background-color:orange;
@@ -79,22 +116,22 @@ aside{
 aside > p{
     font-size: 50pt;
 }
+
+
+/* <!-- ==================================
+            Marketing
+================================== --> */
+
 #marketing{
     grid-area: marketing;
     background-color: pink;
 }
+
+/* <!-- ==================================
+            Footer
+================================== --> */
+
 footer{
     grid-area: footer;
     background-color: green;
-}
-#pages{
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   padding: 5px;
-}
-#pages p{
-    background-color: black;
-    color: white;
 }

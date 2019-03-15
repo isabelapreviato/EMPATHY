@@ -2,25 +2,27 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Empathy</title>
+    <title>Empathy |</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" />
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
+
 <body>
     <div id="grid">
 
-<!-- ==================================
+        <!-- ==================================
             Navbar
 ================================== -->
         <nav>
             <div id="pages">
-                <p>Aqui vem o logo</p>
+                <img src="{% static "images/favicon.png" %}" alt="logo">
                 <a href="#">Sobre</a>
                 <a href="#">Quem Somos</a>
                 <a href="#">Blog</a>
@@ -28,17 +30,18 @@
                 <a href="#">Nos acompanhe</a>
             </div>
         </nav>
-    
-<!-- ==================================
-            Header
-================================== -->
-        <header>Header</header>
-        <article class="GridContent">
-                <h3>Junte-se a nós</h3>
 
-<!-- ==================================
+
+        <header>
+            <img src="{% static "images/header_img" %}" alt="logo">
+        </header>
+        <article class="GridContent">
+
+
+            <!-- ==================================
             Section - Botões
 ================================== -->
+            <h3>Junte-se a nós</h3>
             <section>
                 <div class="user">
                     <p>
@@ -49,38 +52,40 @@
                     </div>
                 </div>
                 <div class="user">
-                <p>
-                    Posso ajudar
-                </p>
-                <div class="button-box">
-                    <button>Empresa</button>
-                </div>
+                    <p>
+                        Posso ajudar
+                    </p>
+                    <div class="button-box">
+                        <button>Empresa</button>
+                    </div>
                 </div>
             </section>
         </article>
 
-<!-- ==================================
+        <!-- ==================================
             Aside
 ================================== -->
         <aside>
-            <p> 
+            <p>
                 frase ou imagem
             </p>
         </aside>
 
-<!-- ==================================
+        <!-- ==================================
             Marketing
 ================================== -->
-        <section id="marketing"> <!--Porque se juntar a nós - marketing -->
+        <section id="marketing">
+            <!--Porque se juntar a nós - marketing -->
             <p>
                 PORQUE SE JUNTAR A NOS
             </p>
         </section>
-         
-<!-- ==================================
+
+        <!-- ==================================
             Footer
 ================================== -->
         <footer>Footer</footer>
     </div>
 </body>
+
 </html>
