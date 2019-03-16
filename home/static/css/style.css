@@ -5,13 +5,12 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;
     color: #212121;
 }
-
 #grid{
     display: grid;
     grid-template-areas: "nav nav nav nav"
@@ -20,10 +19,9 @@ a{
                          "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 80px 834px 400px 200px 600px 50px;
+    grid-template-rows: 80px 834px 400px 250px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
-
 /* <!-- ==================================
             Navbar
 ================================== --> */
@@ -42,10 +40,12 @@ nav{
  nav .a{
      padding: 5px;
      margin-left: 5px;
- }
-
+}
+a:hover {
+	color: rgb(76, 67, 156);
+}
 #pages{
-    width: 140vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,35 +58,29 @@ nav{
     display: flex;
     margin-block-start: 0;
     height: 7vh;
-    opacity:0.9;
-    
+    opacity:0.9;   
  }
  #pages img{
     width: 60px;
  }
- 
-
 /* <!-- ==================================
             Header
 ================================== --> */
-
 header{
     grid-area: header;
     width: 100%;
+    background-color: rgb(76, 67, 156);
 }
-
 header img:hover{
     opacity: 0.5;
 }
-
-
 /* <!-- ==================================
             Section - Botões
 ================================== --> */
 
 article{
     grid-area: article;
-    background-color: orange;
+    background-color: rgb(247, 216, 84);
     display: flex;
     align-items: center; 
     flex-direction: column;
@@ -101,7 +95,6 @@ article h3{
     text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
     font-size: 30pt;
 }
-
 .user{
     width: 50%;
     height: 100%;
@@ -109,9 +102,10 @@ article h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button-box >button {
-    background-color: rgb(45, 204, 112);
+    background-color: rgb(76, 67, 156);
     width: 150px;
     border: none;
     border-radius: 1em;
@@ -121,11 +115,9 @@ article h3{
     outline-style: none;
     cursor: pointer;
 }
-
 /* <!-- ==================================
             Aside
 ================================== --> */
-
 aside{
     grid-area: aside;
     background-color: #f5f5f5;
@@ -143,21 +135,16 @@ aside p{
 aside h2 {
     display: flex;
 }
-
-
 /* <!-- ==================================
             Marketing
 ================================== --> */
-
 #marketing{
     grid-area: marketing;
     background-color: pink;
 }
-
 /* <!-- ==================================
             Footer
 ================================== --> */
-
 footer{
     grid-area: footer;
     background-color: green;
