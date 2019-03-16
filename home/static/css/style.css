@@ -5,13 +5,12 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;
     color: #212121; 
 }
-
 #grid{
     display: grid;
     grid-template-areas: "nav0 nav0 nav0 nav0"
@@ -21,10 +20,13 @@ a{
                          "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
+<<<<<<< HEAD
     grid-template-rows: 100px 80px 834px 400px 200px 600px 50px;
+=======
+    grid-template-rows: 80px 834px 400px 250px 600px 50px;
+>>>>>>> 0cc1f0209089d62523f4fcec34d3d94eaeced204
     grid-template-columns: 25% 25% 25% 25%;
 }
-
 /* <!-- ==================================
             Navbar
 ================================== --> */
@@ -39,6 +41,7 @@ nav{
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     border-bottom: 1px solid lightgray;
+<<<<<<< HEAD
     opacity:x;
 }
 
@@ -46,8 +49,19 @@ nav img {
     width: 100%;
     height: 100%;    
 }
+=======
+    opacity:block;
+    }
+ nav .a{
+     padding: 5px;
+     margin-left: 5px;
+}
+a:hover {
+	color: rgb(76, 67, 156);
+}
+>>>>>>> 0cc1f0209089d62523f4fcec34d3d94eaeced204
 #pages{
-    width: 500vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,39 +72,32 @@ nav img {
     position: fixed;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-block-start: 0;
-    height: 13vh;
-    opacity:0%;
-    
+    height: 7vh;
+    opacity:0.9;   
  }
  #pages img{
     width: 60px;
  }
- 
-
 /* <!-- ==================================
             Header
 ================================== --> */
-
 header{
     grid-area: header;
     width: 100%;
+    background-color: rgb(76, 67, 156);
 }
-
 header img:hover{
     opacity: 0.5;
 }
-
-
 /* <!-- ==================================
             Section - Botões
 ================================== --> */
 
 article{
+    color: white;
     grid-area: article;
-    background-color: orange;
+    background-color: rgb(247, 216, 84);
     display: flex;
     align-items: center; 
     flex-direction: column;
@@ -105,7 +112,6 @@ article h3{
     text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
     font-size: 30pt;
 }
-
 .user{
     width: 50%;
     height: 100%;
@@ -113,11 +119,15 @@ article h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
 }
 .button-box >button {
-    background-color: rgb(45, 204, 112);
+    background-color: rgb(76, 67, 156);
     width: 150px;
-    border: none;
+    border: 2px solid rgb(255,255,255,255);
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.425);
     border-radius: 1em;
     height: 30px;
     color: white;
@@ -125,11 +135,9 @@ article h3{
     outline-style: none;
     cursor: pointer;
 }
-
 /* <!-- ==================================
             Aside
 ================================== --> */
-
 aside{
     grid-area: aside;
     background-color: #f5f5f5;
@@ -147,21 +155,16 @@ aside p{
 aside h2 {
     display: flex;
 }
-
-
 /* <!-- ==================================
             Marketing
 ================================== --> */
-
 #marketing{
     grid-area: marketing;
     background-color: pink;
 }
-
 /* <!-- ==================================
             Footer
 ================================== --> */
-
 footer{
     grid-area: footer;
     background-color: green;
