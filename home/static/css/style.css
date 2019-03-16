@@ -36,9 +36,13 @@ nav{
     -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
-    border-bottom: 1px solid lightgray;]
-    opacity:;
-}
+    border-bottom: 1px solid lightgray;
+    opacity:block;
+    }
+ nav .a{
+     padding: 5px;
+     margin-left: 5px;
+ }
 
 #pages{
     width: 500vh;
@@ -55,8 +59,8 @@ nav{
     justify-content: center;
     align-items: center;
     margin-block-start: 0;
-    height: 13vh;
-    opacity:0%;
+    height: 10vh;
+    opacity:0.9;
     
  }
  #pages img{
