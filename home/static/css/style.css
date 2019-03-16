@@ -7,24 +7,26 @@ body{
 }
 a{
     text-decoration: none;
-    color: #212121;
+    color: #212121; 
 }
 
 #grid{
     display: grid;
-    grid-template-areas: "nav nav nav nav"
+    grid-template-areas: "nav0 nav0 nav0 nav0"
+                         "nav nav nav nav"
                          "header header header header"
                          "aside aside aside aside"
                          "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 80px 834px 400px 200px 600px 50px;
+    grid-template-rows: 100px 80px 834px 400px 200px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
 /* <!-- ==================================
             Navbar
 ================================== --> */
+
 nav{
     grid-area: nav;
     background-color: #FFFFFF;
@@ -41,6 +43,10 @@ nav a{
     font-weight: bold;
 }
 
+nav img {
+    width: 100%;
+    height: 100%;    
+}
 #pages{
     width: 100%;
     display: flex;
@@ -150,3 +156,7 @@ footer{
     grid-area: footer;
     background-color: green;
 }
+
+/* <!-- ==================================
+            Section
+================================== --> */
