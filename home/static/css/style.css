@@ -20,11 +20,7 @@ a{
                          "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-<<<<<<< HEAD
-    grid-template-rows: 100px 80px 834px 400px 200px 600px 50px;
-=======
     grid-template-rows: 80px 834px 400px 250px 600px 50px;
->>>>>>> 0cc1f0209089d62523f4fcec34d3d94eaeced204
     grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -46,15 +42,12 @@ nav{
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     border-bottom: 1px solid lightgray;
-<<<<<<< HEAD
     opacity:x;
 }
 
 nav img {
     width: 100%;
     height: 100%;    
-}
-=======
     opacity:block;
 }
    
@@ -65,7 +58,6 @@ nav img {
 a:hover {
 	color: rgb(76, 67, 156);
 }
->>>>>>> 0cc1f0209089d62523f4fcec34d3d94eaeced204
 #pages{
     width: 100%;
     display: flex;
