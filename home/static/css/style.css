@@ -36,8 +36,8 @@ nav{
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     border-bottom: 1px solid lightgray;
     opacity:block;
-    }
- nav .a{
+}
+nav .a{
      padding: 5px;
      margin-left: 5px;
 }
@@ -110,14 +110,19 @@ article h3{
 .button-box >button {
     background-color: rgb(76, 67, 156);
     width: 150px;
-    border: 2px solid rgb(255,255,255,255);
-    box-shadow: 3px 6px rgba(0, 0, 0, 0.425);
-    border-radius: 1em;
     height: 30px;
+    border: 2px solid rgb(255,255,255,255);
+    border-radius: 1em;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.425);
     color: white;
     font-weight: bold;
     outline-style: none;
     cursor: pointer;
+}
+.button-box >button:hover{
+    width: 151px;
+    height: 31px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.425);
 }
 /* <!-- ==================================
             Aside
@@ -151,5 +156,37 @@ aside h2 {
 ================================== --> */
 footer{
     grid-area: footer;
-    background-color: green;
+    background-color: rgb(76, 67, 156);
 }
+/* <!-- ==================================
+            Logo das redes sociais
+================================== --> */
+#socialmidias{
+    width: 55vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin:3px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social img{
+    width: 20px;
+    height: 20px;
+}
+.social:hover{
+    background-color: rgb(153, 216, 201);
+    cursor: pointer;
+    transition: 0.9s;
+}
+/* <!-- ==================================
+            Logo das redes sociais
+================================== --> */
