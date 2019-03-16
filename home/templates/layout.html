@@ -2,25 +2,96 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Empathy</title>
+    <title>Empathy |</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" />
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
+
 <body>
-    <section id="grid">
-        <header class="GridHeader">Header</header>
-        <nav class="GridNav">Nav</nav>
+    <div id="grid">
+
+<!-- ==================================
+            Navbar
+================================== -->
+        <nav>
+            <div id="pages">
+                <img src="{% static 'images/favicon.png' %}" alt="logo">
+                <a href="#">Sobre</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Blog</a>
+                <a href="#">Imigrantes</a>
+                <a href="#">Nos acompanhe</a>
+            </div>
+        </nav>
+
+
+        <header>
+            
+        </header>
         <article class="GridContent">
-                <div class="button">
-                        <button>Cadastre-se</button>
+
+ <!-- ==================================
+            Section - Botões
+================================== -->
+            <h3>Junte-se a nós</h3>
+            <section>
+                <div class="user">
+                    <p>
+                        Preciso de ajuda
+                    </p>
+                    <!-- <div>
+
+                    </div> -->
+                    <img src="../static/images/user/imigrante.png" alt="">
+                    <div class="button-box">
+                        <button>Imigrante</button>
+                    </div>
                 </div>
-        </article>           
-        <aside class="GridAside">Asside</aside>
-        <footer class="GridFooter">Footer</footer>         
-    </section>
+                <div class="user">
+                    <p>
+                        Posso ajudar
+                    </p>
+                    <img src="../static/images/user/empresa.png" alt="">
+                    <div class="button-box">
+                        <button>Empresa</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+<!-- ==================================
+            Aside
+================================== -->
+        <aside>
+            <h2>Empathy</h2>
+            <p>Inserir aqui algum texto Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione obcaecati, dolorum voluptates quaerat nulla consectetur animi at provident nihil mollitia
+                aut, accusamus sint consequuntur quisquam. Atque sequi eligendi dolorem enim!</p>
+
+        </aside>
+
+        <!-- ==================================
+            Marketing
+================================== -->
+        <section id="marketing">
+            <!--Porque se juntar a nós - marketing -->
+            <p>
+                PORQUE SE JUNTAR A NOS
+            </p>
+        </section>
+
+        <!-- ==================================
+            Footer
+================================== -->
+        <footer>Footer</footer>
+    </div>
 </body>
+
 </html>

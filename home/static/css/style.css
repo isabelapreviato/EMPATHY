@@ -1,22 +1,159 @@
-/* {% extends 'layout.html' %} */
-
-* { padding:0; margin: 0; background-color: palevioletred;}
-
-#grid {
+* { margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+a{
+    text-decoration: none;
+    color: #212121;
+}
+#grid{
     display: grid;
-    grid-template-areas: "header header header header"
-                         "nav nav nav nav"
-                         "content content content content"
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header"
                          "aside aside aside aside"
-                         "footer footer footer footer"
+                         "article article article article"
+                         "marketing marketing marketing marketing"
+                         "footer footer footer footer";
+    grid-template-rows: 80px 834px 400px 250px 600px 50px;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 button {
     border: none;
     color: aliceblue;
-    text-decoration: none;
 }
+/* <!-- ==================================
+            Navbar
+================================== --> */
 
-button:hover {
+nav{
+    grid-area: nav;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    border-bottom: 1px solid lightgray;
+    opacity:block;
+}
+   
+ nav .a{
+     padding: 5px;
+     margin-left: 5px;
+}
+a:hover {
+	color: rgb(76, 67, 156);
+}
+#pages{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: fixed;
+    background-color: #FFFFFF;
+    display: flex;
+    margin-block-start: 0;
+    height: 7vh;
+    opacity:0.9;   
+ }
+ #pages img{
+    width: 60px;
+ }
+/* <!-- ==================================
+            Header
+================================== --> */
+header{
+    grid-area: header;
+    width: 100%;
+    background-color: rgb(76, 67, 156);
+}
+header img:hover{
+    opacity: 0.5;
+}
+/* <!-- ==================================
+            Section - Botões
+================================== --> */
+
+button:hover 
+article{
+    grid-area: article;
+    background-color: rgb(247, 216, 84);
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+article > section{
+    display: flex;
+    width: 90%;
+    height: 70%;
+}
+article h3{
+    font-family: 'Pacifico', cursive;
+    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
+    font-size: 30pt;
+}
+.user{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-box >button {
+    background-color: rgb(76, 67, 156);
+    width: 150px;
+    border: none;
+    border-radius: 1em;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    outline-style: none;
     cursor: pointer;
+}
+/* <!-- ==================================
+            Aside
+================================== --> */
+aside{
+    grid-area: aside;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+aside p{
+    font-size: 13pt;
+}
+aside h2 {
+    display: flex;
+}
+/* <!-- ==================================
+            Marketing
+================================== --> */
+#marketing{
+    grid-area: marketing;
+    background-color: pink;
+}
+/* <!-- ==================================
+            Footer
+================================== --> */
+footer{
+    grid-area: footer;
+    background-color: green;
 }
