@@ -1,36 +1,44 @@
-* { margin: 0;
-    padding: 0;
-}
+/* es (142 sloc)  3.31 KB */
+    
+* { margin: 0;}
 body{
     width: 100vw;
     height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
     color: #212121; 
 }
+
 #grid{
     display: grid;
-    grid-template-areas: "nav0 nav0 nav0 nav0"
-                         "nav nav nav nav"
+    grid-template-areas: "nav nav nav nav"
                          "header header header header"
                          "aside aside aside aside"
                          "article article article article"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 80px 834px 400px 250px 600px 50px;
+    grid-template-rows: 80px 80px 834px 400px 200px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-button {
-    border: none;
-    color: aliceblue;
-}
 /* <!-- ==================================
             Navbar
 ================================== --> */
+
+/* nav{
+    grid-area: nav;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    border-bottom: 1px solid lightgray;
+} */
 
 nav{
     grid-area: nav;
@@ -42,59 +50,76 @@ nav{
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
     border-bottom: 1px solid lightgray;
-    opacity:x;
+    opacity: 80%;
 }
-nav .a{
-    padding: 5px;
-    margin-left: 5px;
+
+
+nav a{
+    display: flex;
+    justify-content: space-around;
+    word-spacing: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 nav img {
     width: 100%;
     height: 100%;    
-    opacity:block;
 }
-a:hover {
-	color: rgb(76, 67, 156);
-}
-#pages{
+/* #pages{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5px;
     text-decoration: none;
+ } */
+
+#pages{
+    width: 500vh;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     position: fixed;
     background-color: #FFFFFF;
-    display: flex;
-    margin-block-start: 0;
-    height: 7vh;
-    opacity:0.9;   
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-block-start: 0; */
+    height: 60px;
+    opacity:0%;
+    
  }
+
  #pages img{
-    width: 60px;
+    height: 40px;
+    width: 100px;
  }
+ 
+
 /* <!-- ==================================
             Header
 ================================== --> */
+
 header{
     grid-area: header;
     width: 100%;
-    background-color: rgb(76, 67, 156);
 }
+
 header img:hover{
     opacity: 0.5;
 }
+
+
 /* <!-- ==================================
             Section - Botões
 ================================== --> */
 
-button:hover 
 article{
-    color: white;
     grid-area: article;
-    background-color: rgb(247, 216, 84);
+    background-color: orange;
     display: flex;
     align-items: center; 
     flex-direction: column;
@@ -109,6 +134,7 @@ article h3{
     text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
     font-size: 30pt;
 }
+
 .user{
     width: 50%;
     height: 100%;
@@ -116,30 +142,23 @@ article h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
 }
 .button-box >button {
-    background-color: rgb(76, 67, 156);
+    background-color: rgb(45, 204, 112);
     width: 150px;
-    height: 30px;
-    border: 2px solid rgb(255,255,255,255);
+    border: none;
     border-radius: 1em;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.425);
+    height: 30px;
     color: white;
     font-weight: bold;
     outline-style: none;
     cursor: pointer;
 }
-.button-box >button:hover{
-    width: 151px;
-    height: 31px;
-    box-shadow: 3px 6px rgba(0, 0, 0, 0.425);
-}
+
 /* <!-- ==================================
             Aside
 ================================== --> */
+
 aside{
     grid-area: aside;
     background-color: #f5f5f5;
@@ -157,46 +176,26 @@ aside p{
 aside h2 {
     display: flex;
 }
+
+
 /* <!-- ==================================
             Marketing
 ================================== --> */
+
 #marketing{
     grid-area: marketing;
     background-color: pink;
 }
+
 /* <!-- ==================================
             Footer
 ================================== --> */
+
 footer{
     grid-area: footer;
-    background-color: rgb(76, 67, 156);
+    background-color: green;
 }
+
 /* <!-- ==================================
-            Logo das redes sociais
+            Section
 ================================== --> */
-#socialmidias{
-    width: 55vw;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social{
-    width: 35px;
-    height: 35px;
-    background-color: rgba(128, 128, 128, 0.5);
-    margin:3px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social img{
-    width: 20px;
-    height: 20px;
-}
-.social:hover{
-    background-color: rgb(153, 216, 201);
-    cursor: pointer;
-    transition: 0.9s;
-}
