@@ -44,25 +44,35 @@ nav{
 section {
     display: grid;
     grid-template-areas:
+    ". h2 ."
     "h1 h2 h3"
-    "h1 h2 h3"
-    "h1 h2 h3";
+    ". h2 .";
     grid-template-rows: 33% 33% 33%;
-    grid-template-columns: 25% 25% 25%;
-    flex-direction: row;
+    grid-template-columns: 33% 33% 33%;
 }
 
-.h11 {
+section hgroup {
+    justify-content: center;
+    display: flex;
+}
+
+#h11 {
     grid-area: h1;
-    display: flex;
+    color: #ffffff;
 }
 
-.h12 {
+#h12 {
     grid-area: h2;
-    display: flex;
 }
 
-.h13 {
+#logo-maos {
+    display: flex;    
+    width: 10x;
+    height: 350px;
+    margin-top: 30px;
+}
+
+#h13 {
     grid-area: h3;
-    display: flex;
+    color: #ffffff;
 }
