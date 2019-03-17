@@ -52,17 +52,17 @@ section {
     flex-direction: row;
 }
 
-h1 {
+.h11 {
     grid-area: h1;
     display: flex;
 }
 
-h2 {
+.h12 {
     grid-area: h2;
     display: flex;
 }
 
-h3 {
+.h13 {
     grid-area: h3;
     display: flex;
 }
