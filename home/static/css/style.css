@@ -89,8 +89,8 @@ nav img {
     /* align-items: center; */
     /* margin-block-start: 0; */
     height: 60px;
-    /* opacity:0%; */
-    z-index: 2;
+    opacity: 0.9;
+    /* z-index: 2; */
  }
 
  
