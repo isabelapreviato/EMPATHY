@@ -15,12 +15,11 @@ a{
 #grid{
     display: grid;
     grid-template-areas: "nav nav nav nav"
-                         "header header header header"
-                         "aside aside aside aside"
                          "article article article article"
+                         "aside aside aside aside"
                          "marketing marketing marketing marketing"
                          "footer footer footer footer";
-    grid-template-rows: 80px 80px 834px 400px 200px 600px 50px;
+    grid-template-rows: 80px 25% 834px 400px 200px 600px 50px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -76,6 +75,7 @@ nav img {
  } */
 
 #pages{
+    top: 0;
     width: 500vh;
     display: flex;
     /* justify-content: space-around; */
@@ -89,9 +89,11 @@ nav img {
     /* align-items: center; */
     /* margin-block-start: 0; */
     height: 60px;
-    opacity:0%;
-    
+    /* opacity:0%; */
+    z-index: 2;
  }
+
+ 
 
  #pages img{
     height: 40px;
@@ -119,7 +121,7 @@ header img:hover{
 
 article{
     grid-area: article;
-    background-color: orange;
+    background-color:#FFFFFF;
     display: flex;
     align-items: center; 
     flex-direction: column;
@@ -161,7 +163,7 @@ article h3{
 
 aside{
     grid-area: aside;
-    background-color: #f5f5f5;
+    background-color: rgb(76, 67, 156);
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
