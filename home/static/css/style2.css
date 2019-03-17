@@ -7,6 +7,10 @@ a {
     margin-top: 5px;
 }
 
+a:hover {
+        color: #b3b3b3;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +26,10 @@ body {
     margin-top: 5px; 
 }
 
+#logo-nav:hover {
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -30,17 +38,31 @@ nav{
     align-items: center;
     font-weight: bold;
     font-family: 'Fjalla One', sans-serif;
+    opacity: 0,9;
 }
 
-/* .hamburger img {
-	width: 50px;
+section {
+    display: grid;
+    grid-template-areas:
+    "h1 h2 h3"
+    "h1 h2 h3"
+    "h1 h2 h3";
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25%;
+    flex-direction: row;
 }
 
-.esconde-menu {
-	height: 55px;
-	transition: 0.5s;
+h1 {
+    grid-area: h1;
+    display: flex;
 }
 
-.esconde-menu .links {
-	transform: translateY(-130%);
-} */
+h2 {
+    grid-area: h2;
+    display: flex;
+}
+
+h3 {
+    grid-area: h3;
+    display: flex;
+}
