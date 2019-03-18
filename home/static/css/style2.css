@@ -128,3 +128,18 @@ section hgroup {
     justify-content: center;
     display: flex;
 }
+
+
+footer {
+    display: grid;
+    grid-template-areas: "footer1 footer2 footer3";
+    grid-template-rows:100px;
+    grid-template-columns: 33% 33% 33%;
+    background-color: black;
+}
+
+footer p{
+    margin-left: 20px;
+    margin-top: 40px;
+    color: white;
+}
