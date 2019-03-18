@@ -14,7 +14,8 @@ a:hover {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(76, 67, 156);
+    background-color:rgb(76, 67, 156);
+    overflow-x: hidden;
 }
 
 #logo-nav { 
@@ -94,3 +95,19 @@ button:hover {
     background-color: #99d8c9;
 }
 
+aside {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: "coluna1 coluna2";
+    grid-template-rows: 400px;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+}
+aside p {
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+aside iframe {
+    margin-top: 50px;
+}
