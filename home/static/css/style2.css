@@ -11,11 +11,78 @@ a:hover {
         color: #b3b3b3;
 }
 
+aside {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas:"coluna1 coluna2";
+    grid-template-rows: 400px;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+}
+aside p {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+aside iframe {
+    margin-top: 50px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color:#E1E7E4;   
     overflow-x: hidden;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    padding: 14px 40px;
+    background-color:  #66c3b7;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #99d8c9;
+}
+
+#coluna1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#coluna1 img{
+    width: auto;
+    height: 50px;
+}
+
+#h11 {
+    grid-area: h1;
+    color: black;
+}
+
+#h12 {
+    grid-area: h2;
+}
+
+#logo-maos {
+    display: flex;    
+    width: 10x;
+    height: 350px;
+    margin-top: 30px;
+}
+
+#h13 {
+    grid-area: h3;
+    color:black;
 }
 
 #logo-nav { 
@@ -34,7 +101,8 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    background: white;
+    /* background: white; */
+    background-image: linear-gradient(white, #E1E7E4);
     padding: 15px;
     align-items: center;
     font-weight: bold;
@@ -55,59 +123,4 @@ section {
 section hgroup {
     justify-content: center;
     display: flex;
-}
-
-#h11 {
-    grid-area: h1;
-    color: #ffffff;
-}
-
-#h12 {
-    grid-area: h2;
-}
-
-#logo-maos {
-    display: flex;    
-    width: 10x;
-    height: 350px;
-    margin-top: 30px;
-}
-
-#h13 {
-    grid-area: h3;
-    color: #ffffff;
-}
-
-button {
-    display: flex;
-    align-items: center;
-    border-radius: 24px;
-    padding: 14px 40px;
-    background-color:  #66c3b7;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #99d8c9;
-}
-
-aside {
-    margin-top: 10%;
-    display: grid;
-    grid-template-areas: "coluna1 coluna2";
-    grid-template-rows: 400px;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-}
-aside p {
-    margin-top: 180px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-aside iframe {
-    margin-top: 50px;
 }
