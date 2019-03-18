@@ -70,14 +70,18 @@ button:hover {
 }
 
 #h12 {
-    grid-area: h2;
+    display: grid;
+    grid-area: h2;	  
+    margin-right: 50px;
+	align-items: center;
+	
 }
 
 #logo-maos {
     display: flex;    
     width: 10x;
     height: 350px;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 #h13 {
@@ -120,8 +124,8 @@ section {
     ". h2 ."
     "h1 h2 h3"
     ". h2 .";
-    grid-template-rows: 33% 33% 33%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33% 33%;
+    grid-template-columns: 33% 33% 33% 33%;
 }
 
 section hgroup {
@@ -131,14 +135,30 @@ section hgroup {
 
 
 footer {
-    display: grid;
-    grid-template-areas: "footer1 footer2 footer3";
-    grid-template-rows:100px;
+    display: grid;    
+    grid-template-areas: "footer1 footer2 footer3"
+                         ". footer2 footer3"
+                         ". footer2 footer3"   ;
+    grid-template-rows:33% 33% 33%;
     grid-template-columns: 33% 33% 33%;
     background-color: black;
 }
 
+#footer3 {
+    display: grid;
+    grid-area: footer3;
+	flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+	align-items: center;
+	align-content: stretch;
+    
+
+}
+
 footer p{
+    display: grid;
+    grid-area: footer1;    
     margin-left: 20px;
     margin-top: 40px;
     color: white;
