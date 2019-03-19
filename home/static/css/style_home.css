@@ -80,12 +80,17 @@ button:hover {
     position: relative;
     align-items: center;
     justify-content: center
+    
 }
 
 
 #h11 p {
-    display: flex;
+    display: block;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 #h12 {
@@ -113,16 +118,27 @@ button:hover {
     align-items: center;
     /* width: inherit; */
     height: 300px;
-    object-fit: contain; 
+    /* object-fit: contain;  */
     margin-top: 100px;
     /* position: relative; */
     /* margin-top: inherit; */
 }
 
 #h13 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#h13 p {
     grid-area: h3;
     color: black;
-    /* margin-right: 70px; */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 /* #h13 {
