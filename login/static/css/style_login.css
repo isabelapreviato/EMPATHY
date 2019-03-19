@@ -70,6 +70,8 @@ button {
   background-color: rgb(76, 67, 156);
   border: none;
   color: white;
+  margin-top: 5px;
+  padding: 10px 50px;
 } 
 
 /* 
@@ -108,7 +110,7 @@ button {
 }
 
  #logo img{
-    height: 30px;
+    height: 35px;
     width: auto;
     display: flex;
     margin-bottom: 5px;
