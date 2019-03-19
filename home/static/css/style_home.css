@@ -122,6 +122,13 @@ button:hover {
     /* margin-top: inherit; */
 }
 
+.floquinhoverde {
+    -webkit-animation:spin 4s linear infinite;
+    
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
 #h13 {
     grid-area: h3;
     margin-left: 100px;
