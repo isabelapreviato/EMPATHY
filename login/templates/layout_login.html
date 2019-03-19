@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Empathy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/style_cadastro1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_login.css' %}">
 </head>
 <body>
 
@@ -31,14 +31,14 @@
         
           <div class="container">
             <label for="uname"><b>Nome</b></label>
-            <input type="text" placeholder="Entre com o Nome" name="uname" required>
+            <input class="inputForm" type="text" placeholder="Entre com o Nome" name="uname" required>
         
             <label for="psw"><b>Senha</b></label>
-            <input type="password" placeholder="Entre com a Senha" name="psw" required>
+            <input class="inputForm" type="password" placeholder="Entre com a Senha" name="psw" required>
                 
             <button type="submit">Entre</button>
             <label>
-              <input type="checkbox" checked="checked" name="remember"> Lembre-se de mim
+              <input class="inputForm" type="checkbox" checked="checked" name="remember"> Lembre-se de mim
             </label>
           </div>
         
