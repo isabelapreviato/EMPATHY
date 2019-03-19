@@ -146,20 +146,25 @@ footer {
 
 #footer3 {
     display: grid;
-    grid-area: footer3;
+    grid-area: footer3;        
 	flex-direction: row;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 100px;    
 	align-items: center;
-	align-content: stretch;
-    
+	align-content: stretch;  
 
+}
+
+footer div img {
+    width: 20px;
+    height: 20px;
 }
 
 footer p{
     display: grid;
     grid-area: footer1;    
-    margin-left: 20px;
-    margin-top: 40px;
+    text-align: left;    
+    margin-left: 100px;
+    margin-top: 30px;
     color: white;
 }
