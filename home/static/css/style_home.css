@@ -104,16 +104,19 @@ button:hover {
     align-items: center;    
     width: inherit;
     height: 380px;
-    margin-top: 100px;
     object-fit: contain; */
 
     display: block;
+    /* position: absolute; */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    width: inherit;
+    /* width: inherit; */
     height: 300px;
     object-fit: contain; 
+    margin-top: 100px;
+    /* position: relative; */
+    /* margin-top: inherit; */
 }
 
 #h13 {
@@ -167,11 +170,9 @@ nav{
 
 section {
     display: grid;
-    grid-template-areas:
-    ". h2 ."
-    "h1 h2 h3"
-    ". h2 .";
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"h1 h2 h3";
+
+    grid-template-rows: 2fr;
     grid-template-columns: 1fr 1fr 1fr;
     height: 50vh;
 }
