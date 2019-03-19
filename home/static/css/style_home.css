@@ -76,21 +76,16 @@ button:hover {
     /* display: flex; */
     /* align-content: flex-end; */
     /* margin-left: 70px; */
-
-    position: relative;
-    align-items: center;
-    justify-content: center
+    margin-left: 200px;  
     
 }
 
 
 #h11 p {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    display: grid; 
+    grid-area: h3;
+    color: black;  
+    
 }
 
 #h12 {
@@ -113,32 +108,30 @@ button:hover {
 
     display: block;
     /* position: absolute; */
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 100px;
+    margin-left: 200px;    
     align-items: center;
     /* width: inherit; */
-    height: 300px;
+    height: 80px;
+    width: auto;
+    
     /* object-fit: contain;  */
-    margin-top: 100px;
+        
     /* position: relative; */
     /* margin-top: inherit; */
 }
 
 #h13 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    grid-area: h3;
+    margin-left: 100px;
+
 }
 
 #h13 p {
     grid-area: h3;
     color: black;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    display: grid;  
+ 
 }
 
 /* #h13 {
@@ -191,7 +184,9 @@ section {
     background-size: cover; */
 
     display: grid;
-    grid-template-areas:"h1 h2 h3";
+    grid-template-areas: ". h2 ."
+                        "h1 h2 h3"
+                        ". h2 .";
 
     grid-template-rows: 2fr;
     grid-template-columns: 1fr 1fr 1fr;
