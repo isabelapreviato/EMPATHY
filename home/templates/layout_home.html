@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Empathy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
     <!-- <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" /> -->
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
@@ -17,29 +17,37 @@
     <nav>
         <img id= logo-nav src="{% static 'images/empathy-text.png' %}" alt="logo">
         <a href="#">Sobre</a>
-        <a href="#">Quem Somos</a>
         <a href="#">Blog</a>
-        <a href="#">Imigrantes</a>
-        <a href="#">Nos acompanhe</a>   
+        <a href="#">Suporte</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>   
+        <a href="#">Entre</a>   
     </nav>
 
-    <section>
-        <h1 id= h11>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa, excepturi autem voluptatibus facilis optio, recusandae libero suscipit ipsum, modi </p>
-            <a href="/cadastro1">
-                <button type="button">
-                    Cadastre-se
-                </button> 
-            </a>           
-        </h1>
-        <h1 id= h12>
-            <img id=logo-maos src="{% static 'images/empathy-maos.png' %}" alt="">
-        </h1>
-        <h1 id= h13>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit maiores sint maxime vitae sed ullam minima earum fuga labore ab, officia</p>
-            <button type="button">Cadastre-se</button>            
-        </h1>
-    </section>
+    <!-- <div id=grid_section> -->
+        <section>
+            <h1 id= h11>
+                <p>Preciso de Ajuda!</p>
+                <a href="/cadastro1">
+                    <button type="button">
+                        Cadastre-se
+                    </button> 
+                </a>           
+            </h1>
+            <div id= h12>
+                <img src="{% static 'images/empathy-maos.png' %}" alt="">
+            </div>
+            <h1 id= h13>
+                <p>Quero Ajudar!</p>
+                <a href="/cadastro2">
+                    <button type="button">
+                        Cadastre-se   
+                    </button>
+                </a>               
+            </h1>
+        </section>
+    <!-- </div>     -->
+
     <aside>
         <div id=coluna1>
             <div>

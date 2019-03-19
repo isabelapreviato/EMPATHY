@@ -12,7 +12,7 @@ a:hover {
 }
 
 aside {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     display: grid;
     grid-template-areas:"coluna1 coluna2";
     grid-template-rows: 400px;
@@ -64,30 +64,64 @@ button:hover {
     height: 50px;
 }
 
+/* #grid_section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+} */
+
 #h11 {
     grid-area: h1;
     color: black;
+    /* display: flex; */
+    /* align-content: flex-end; */
+    /* margin-left: 70px; */
 }
+/* 
+#h11 p {
+    display: flex;
+    align-content: flex-end;
+} */
 
 #h12 {
-    display: grid;
-    grid-area: h2;	  
-    margin-right: 50px;
-	align-items: center;
-	
+    /* display: grid; */
+    grid-area: h2;  
+	/* align-items: center; */
 }
 
-#logo-maos {
-    display: flex;    
-    width: 10x;
-    height: 350px;
+#h12 img {
+    /* height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;  */
+
+    display: flex;
+    align-items: center;    
+    width: auto;
+    height: 380px;
     margin-top: 100px;
+    /* object-fit: contain; */
 }
 
 #h13 {
     grid-area: h3;
-    color:black;
+    color: black;
+    /* margin-right: 70px; */
 }
+
+/* #h13 {
+    grid-area: h3;
+    color:black;
+} */
+
+/* #logo-maos {
+    display: flex;
+    align-items: center;    
+    width: 10x;
+    height: 350px;
+    margin-top: 100px;
+    object-fit: contain;
+} */
 
 #logo-nav { 
     height: 35px;
@@ -124,15 +158,10 @@ section {
     ". h2 ."
     "h1 h2 h3"
     ". h2 .";
-    grid-template-rows: 33% 33% 33% 33%;
-    grid-template-columns: 33% 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 50vh;
 }
-
-section hgroup {
-    justify-content: center;
-    display: flex;
-}
-
 
 footer {
     display: grid;    
