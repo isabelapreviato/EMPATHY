@@ -7,46 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Empathy</title>
+    <link rel="icon" href="{% static 'images/favicon.png' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/style_login.css' %}">
 </head>
 <body>
-
-        <nav>
-                <!-- <img id= logo-nav src="{% static 'images/empathy-text.png' %}" alt="logo"> -->
-                <a href="#">Sobre</a>
-                <a href="#">Blog</a>
-                <a href="#">Suporte</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contato</a>   
-                <a href="/login">Entre</a>   
-        </nav>
-   
-        <h2>Entre</h2>
-
-        <form action="/action_page.php">
-          <div class="imgcontainer">
-            
-          </div>
-        
-          <div class="container">
-            <label for="uname"><b>Nome</b></label>
-            <input class="inputForm" type="text" placeholder="Entre com o Nome" name="uname" required>
-        
-            <label for="psw"><b>Senha</b></label>
-            <input class="inputForm" type="password" placeholder="Entre com a Senha" name="psw" required>
-                
-            <button type="submit">Entre</button>
-            <label>
-              <input class="inputForm" type="checkbox" checked="checked" name="remember"> Lembre-se de mim
-            </label>
-          </div>
-        
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancelar</button>
-            <span class="psw">Esqueceu a <a href="#">senha?</a></span>
-          </div>
+  <main>
+        <form action="">
+            <div class="login">
+              <a id=logo href="/">
+                <img src="{% static 'images/empathy-text.png' %}" alt="logo">
+              </a>  
+              <input type="text" placeholder="Nome" name="name" required>
+              <input type="password" placeholder="Senha" name="psw" required>
+              <button id=entrar type="submit">Entrar</button>
+              <button type="button" id="cancelar">Cancelar</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Lembre-se de mim
+              </label>
+              <span class="psw">Esqueceu a <a href="#">senha?</a></span>  
+            </div>
         </form>
-
+  </main>      
 </body>
 </html>

@@ -1,108 +1,67 @@
-a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: flex-end;
-    margin-right: 70px;
-    margin-top: 5px;
-}
-
-a:hover {
-    color: #b3b3b3;
-}
-
 body {
     margin: 0;
     background: linear-gradient(201deg, #5f88ff, #9ab5e5, #99d8c9);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: #99d8c9;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 550px;
 }
 
-#logo-nav { 
-    height: 35px;
+form {
+  width: 350px;
+  height: 280px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 2px 2px 30px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#entrar {
+  background-color: rgb(76, 67, 156);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 40px;
+  margin-top: 6px;
+}
+
+#cancelar {
+  background-color: #b3b3b3;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px 20px;
+  margin-top: 2px;
+}
+
+#logo img{
+    height: 30px;
     width: auto;
     display: flex;
-    align-items: flex-start;
-    margin-left: 70px;   
-    margin-top: 5px; 
-}
-
-#logo-nav:hover {
-    cursor: pointer;
-}
-
-nav{
-    display: flex;
-    position:fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    justify-content: space-between;
-    /* background: white; */
-    background-image: linear-gradient(white, #E1E7E4);
-    padding: 15px;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Fjalla One', sans-serif;
-    opacity: 0,9;
-}
-
-form {border: 3px solid #f1f1f1;
-
-}
-.inputForm{
-  width: 100px;
-}
-
-/* input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-} */
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-/* 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-} */
+    /* align-items: flex-start; */
+    margin-bottom: 5px;
+}    
