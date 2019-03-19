@@ -19,11 +19,12 @@ from django.urls import path
 from home import views
 from cadastro.views import index_cadastro1
 from cadastro.views import index_cadastro2
-# from user1 import views
+from login.views import index_login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('cadastro1/', index_cadastro1),
     path('cadastro2/', index_cadastro2),
+    path('login/', index_login),
 ]
