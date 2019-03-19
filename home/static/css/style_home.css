@@ -59,9 +59,14 @@ button:hover {
     flex-direction: column;
 }
 
-#coluna1 img{
+#coluna1 #empathy_text{
     width: auto;
     height: 50px;
+}
+
+#coluna1 #logo {
+    width: auto;
+    height: 90px;
 }
 
 /* #grid_section {
@@ -109,7 +114,7 @@ button:hover {
 
     display: block;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 150px;
     margin-left: 80px;    
     align-items: center;
     /* width: inherit; */
