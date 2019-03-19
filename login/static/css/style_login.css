@@ -3,7 +3,6 @@ body {
     background: linear-gradient(201deg, #5f88ff, #9ab5e5, #99d8c9);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 main {
@@ -23,7 +22,39 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+} 
+
+/*
+.container{
+  display: flex;
+  width: 100%;
+  height:80vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
 }
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+*/
 
 .login {
   width: 85%;
@@ -34,17 +65,35 @@ form {
   flex-direction: column;
 }
 
+
 #entrar {
   background-color: rgb(76, 67, 156);
   border: none;
   color: white;
+} 
+
+/* 
+.cancelbtn {
+  width: 10%;
+  padding-top: 20px;
+  align-self: left;
+  background-color: #f44336;
+}
+
+.label{
+  padding-left: 10px;
+  align-self: left;
+}
+*/
+/* 
+.imgcontainer {
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   padding: 10px 40px;
   margin-top: 6px;
-}
+} */
 
 #cancelar {
   background-color: #b3b3b3;
@@ -58,10 +107,9 @@ form {
   margin-top: 2px;
 }
 
-#logo img{
+ #logo img{
     height: 30px;
     width: auto;
     display: flex;
-    /* align-items: flex-start; */
     margin-bottom: 5px;
-}    
+}
