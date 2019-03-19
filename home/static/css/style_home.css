@@ -84,7 +84,8 @@ button:hover {
 #h11 p {
     display: grid; 
     grid-area: h3;
-    color: black;  
+    color: black;
+     
     
 }
 
@@ -107,12 +108,12 @@ button:hover {
     object-fit: contain; */
 
     display: block;
-    /* position: absolute; */
-    margin-top: 100px;
-    margin-left: 200px;    
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 80px;    
     align-items: center;
     /* width: inherit; */
-    height: 80px;
+    height: 250px;
     width: auto;
     
     /* object-fit: contain;  */
